@@ -6,9 +6,21 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "bootstrap": "^4.4.1",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0"
+  },
+  "watch": {
+    "test": {
+      "patterns": ["src", "test"],
+      "extensions": "js,jsx",
+      "ignore": "src/vendor/external.min.js",
+      "quiet": true,
+      "legacyWatch": true,
+      "delay": 2500,
+      "runOnChangeOnly": false
+    }
   },
   "scripts": {
     "start": "react-scripts start",
@@ -30,5 +42,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.0",
+    "@babel/node": "^7.8.0",
+    "@babel/preset-env": "^7.8.0",
+    "nodemon": "^2.0.2"
   }
 }
